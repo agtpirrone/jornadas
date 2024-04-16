@@ -15,7 +15,7 @@
         html { scroll-behavior: smooth;}
           body {background-color: #83FEc2;  font-family: "Fira Sans", sans-serif; font-weight: 300; font-optical-sizing: auto;font-style: normal; font-size: 100%;}
         main {background-repeat: repeat ; margin: auto; /* max-width: 960px; */ display: flex; align-self: center; flex-direction: column;}
-        header a {text-decoration: none; color: var(--Link-color)}
+        header a {text-decoration: none; color: var(--Link-color);font-size: 2.5rem;}
         h2{font-size: xx-large; font-family: "Alumni Sans"; text-transform: uppercase;}
         #logo {width: 14rem; padding: 5px;}
         .logo {height: 1rem; width: auto;}
@@ -63,7 +63,8 @@ img {width: 100%;}
     </header>
     <main><div id="hero" class=""><img src="hero2-01.png" style="width: 100%;"/> </div>
     <section id="disertantes" class=""><h2>NUESTROS DISERTANTES</h2> 
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem pariatur voluptatum autem, odit ad magnam ipsa molestias delectus aspernatur quod! Ad doloremque dolore, magnam facilis eveniet quisquam tenetur veritatis itaque!</p> <div><img src="dis1.png"</div></section>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem pariatur voluptatum autem, odit ad magnam ipsa molestias delectus aspernatur quod! Ad doloremque dolore, magnam facilis eveniet quisquam tenetur veritatis itaque!</p>
+     <div><img src="dis1.gif"></div></section>
     <section id="cronograma" class=""><h2>CRONOGRAMA DE CHARLAS</h2>
     <div><img src="crono.png"> </div><p><a href="#">Ver cronograma completo...</a></p></section>
     <section id="formulario" class=""><h2> Aca van formulario pequeño</h2>
@@ -72,17 +73,17 @@ img {width: 100%;}
         <div class="labels">
          <label id="name-label" for="name">* Nombre</label></div>
        <div class="input-tab">
-         <input class="input-field" type="text" id="name" name="name" placeholder="Nombres y Apellidos" required autofocus></div>
+         <input class="input-field" type="text" id="name" name="name" placeholder="Nombres y Apellidos" required autofocus autocomplete="name"></div>
 
         <div class="labels">
          <label id="email-label" for="email">* E-mail</label></div>
        <div class="input-tab">
-         <input class="input-field" type="email" id="email" name="email" placeholder="email@email.com" required></div>
+         <input class="input-field" type="email" id="email" name="email" placeholder="email@email.com" required autocomplete="email"></div>
        
         <div class="labels">
          <label id="number-label" for="number">* Edad</label></div>
        <div class="input-tab">
-         <input class="input-field" type="number" id="number" name="number" min="1" max="120" placeholder="21" required></div>
+         <input class="input-field" type="number" id="number" name="number" min="1" max="120" placeholder="21" autocomplete="age" required></div>
 
          
         <div class="labels">
@@ -100,6 +101,7 @@ img {width: 100%;}
        <div class="labels">
          <label>Como conociste las jornadas?</label></div>
        <div class="input-tab">
+      
            <input type="radio" name="radio-button" value="amigo">Un amigo!<br>
            <input type="radio" name="radio-button" value="docente">Un docente<br>
            <input type="radio" name="radio-button" value="rrss">Por Redes soiales<br>
