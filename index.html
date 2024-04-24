@@ -3,72 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2das Jornadas Estudiantiles de Diseño Contemporáneo</title>
+    <title>2das JORNADAS Estudiantiles de DISEÑO Contemporáneo</title>
+    <link rel="icon" href="favico.svg">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Dosis:wght@200..800&family=Genos:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+        :root {--id2:#00207f; --id3:#5434DC; --id1:#83FEC2;--col3b: #8368F5;}
         html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,
         small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,
         article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup,menu, nav, output, ruby, section, summary,time, mark, audio, video {
 	        margin: 0;	padding: 0;	border: 0;	vertical-align: baseline; /* scroll-padding: 125px; */}
-          menu{width: 99vw; min-height: 125px;display: flex; justify-content: space-around; flex-direction: row;align-items: center;}
-        html { scroll-behavior: smooth;}
-          body {background-color: #83FEc2;  font-family: "Fira Sans", sans-serif; font-weight: 300; font-optical-sizing: auto;font-style: normal; font-size: 100%;}
+          menu{background-color: #b0eae0; width: 99vw; min-height: 50px;display: flex; justify-content: space-around; flex-direction: row;align-items: center;}
+        html {scroll-behavior: smooth;}
+        ul {list-style-type: none;}
+        .blanco{color: #fff !important;}
+        .negro {color: #000 !important;}
+        body {width: 100%; background: url("dot-grid.svg");background-size: 20%; background-color: #fff;  font-family: "Fira Sans", sans-serif; font-weight: 300; font-optical-sizing: auto;font-style: normal; font-size: 100%;}
         main {background-repeat: repeat ; margin: auto; /* max-width: 960px; */ display: flex; align-self: center; flex-direction: column;}
         header a {text-decoration: none; color: var(--Link-color);font-size: 2.5rem;}
-        h2{text-align: center;font-size: 3rem; font-family: "Alumni Sans"; text-transform: uppercase; transform: rotate(-3deg);margin-block-end: 1.5rem;}
-        #logo {width: 18rem; padding: 5px;}
-        .menu-nav{color: white; font-family: "Alumni Sans", sans-serif; font-size: 2rem; font-weight: 600; text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.767);}
-        .menu-nav a:hover{text-shadow: 2px 3px 0px rgba(0, 0, 0, 0.76);}
+        h1 {font-family: "Alumni Sans", sans-serif;text-transform: uppercase; margin: 0;  padding: 0;  font-size: 2.8em; color: #fff; letter-spacing: 2px; word-spacing: 5px; line-height: 1em; font-weight: bold;}
+        h3 {font-family: "Alumni Sans", sans-serif;text-transform: uppercase; font-size: 1.5rem;padding-block-start:1rem;}
+        h2 {text-align: center;font-size: 3rem; font-family: "Alumni Sans"; text-transform: uppercase; transform: rotate(-3deg);margin-block-end: 1.5rem;}
+        p  {display: block;  margin: 0;  padding: 0;  text-align: center; font-size: 1.2em;  line-height: 1.2em;}
+        #logo {width: 16rem;}
+        .menu-nav{color: var(--id2); font-family: "Alumni Sans", sans-serif; font-size: 2rem; font-weight: 600;}
+        .menu-nav a:hover, :visited{text-shadow: 2px 3px 0px rgba(200, 255, 249, 0.871);}
         section {min-height: 400px; padding: 3rem;}
-        #hero {margin: -4px;}
+        .mas-margen {padding-block-start: 1rem;}
+        #hero {background-image: linear-gradient(177deg,#00000000 70%,#00207f calc(70% + 2px),#00207f 92%,#fff0 calc(92% + 2px)); padding-block-end: 6vw;}
+        #cronograma{ background-image: linear-gradient(177deg,#f4f4f400 9%,#00207f calc(9% + 2px));}
         #disertantes {background: url("dot-grid.svg");background-size: 20%; background-color: white;}
-        #formulario {background-color: #2e09a8;color: white;}
+        #formulario {color: white; background-image: linear-gradient(177deg,#00207f 8%,#8368F5 calc(8% + 2px),#8368F5 92%, #fff0 calc(92% + 2px)); padding-block-end: 4rem;}
+        
+        #formulario a, #formulario a:visited {color: #fff;}
+        .footercol {width: 33%;}
         .text-box {background-color: #2e09a8(230, 126, 34,0.8);border-radius: 20px;margin: 2em auto;padding: 20px;width: 90%;}
-h1 {margin: 0;  padding: 0;  font-size: 2.8em; color: #fff; text-align: center; letter-spacing: 2px; word-spacing: 5px; line-height: 1em; font-weight: bold;}
-p {  display: block;  margin: 0;  padding: 0;  text-align: center; font-size: 1.2em;  line-height: 1.2em;}
 
-.container {border-radius: 20px;margin: auto;width: 90%;padding: 1em;}
-#survey-form {margin: 0 auto;width: 80%;padding: 10px;}
-.labels {display: inline-block;text-align: right;width: 40%;vertical-align: top;margin-top: 20px;}
-.input-tab {display: inline-block;text-align: left;width: 50%;margin-left: 10px;}
-.input-field { display: inline-block; width: 100%; padding: 5px; margin: 18px 0 0 10px; border: 1px solid #22e6c5; border-radius: 4px; font-family: inherit; font-size: 15px; font-weight: bold;}
-::-webkit-input-placeholder { font-style: italic; font-weight: 300;}
-input {  margin: 7px;}
-#dropdown {  width: 100%;  padding: 5px; margin: 20px 0 10px 10px; border: 1px solid #5d22e6; border-radius: 3px; font-family: inherit;  font-size: 15px;}
-.btn { width: 100%; text-align: center; margin: 20px;}
-button { background-color: #5d22e6; border-radius: 4px; color: white;font-size: 1em; font-weight: bold; font-family: inherit; padding: 10px 15px; border: 1px solidñ}
-button:hover { background-color: #5d22e6;}
-footer { text-align: center; font-size: 17px; margin: 20px;}
-footer a {color: #12bbf3;  position: relative;  text-decoration: none;font-weight: bold;}
-footer a:hover {color: #2d0ff1;}
-footer p {  margin: 0;font-size: 17px;}
+        .container {border-radius: 20px;margin: auto;width: 90%;padding: 1em;}
+        #survey-form {margin: 0 auto;width: 80%;padding: 10px;}
+        .labels {display: inline-block;text-align: right;width: 40%;vertical-align: top;margin-top: 20px;}
+        .input-tab {display: inline-block;text-align: left;width: 50%;margin-left: 10px;}
+        .input-field { display: inline-block; width: 100%; padding: 5px; margin: 18px 0 0 10px; border: 1px solid #22e6c5; border-radius: 4px; font-family: inherit; font-size: 15px; font-weight: bold;}
+        ::-webkit-input-placeholder { font-style: italic; font-weight: 300;}
+        input {  margin: 7px;}
+        #dropdown {  width: 100%;  padding: 5px; margin: 20px 0 10px 10px; border: 1px solid #5d22e6; border-radius: 3px; font-family: inherit;  font-size: 15px;}
+        .btn { width: 100%; text-align: center; margin: 20px;}
+        button { background-color: var(--id3); border-radius: 4px; color: white;font-size: 1em; font-weight: bold; font-family: inherit; padding: 10px 15px; border: 1px solidñ}
+        button:hover { background-color: #8368F5;}
+        footer { background-image: linear-gradient(177deg,#f4f4f400 27%,#68f5d6 calc(27% + 2px)); display: flex;text-align: center;font-size: 17px; padding-top: 5rem;flex-wrap: wrap;justify-content: center;}
+        footer a {color: var(--id3);  position: relative;  text-decoration: none;font-weight: bold;}
+        footer a:hover {color: #8368F5;}
+        footer p {  margin: 0;font-size: 14px; line-height: 2rem;}
+        #myBtn {   display: none;
+  position: fixed;  bottom: 20px;
+  right: 30px;  z-index: 99;
+  font-size: 30px;  border: none; width: 2.5rem; height: 2.5rem;
+  outline: none;  background-color: var(--id3); padding: 0px;
+  color: rgb(206, 206, 206);  cursor: pointer; border-radius: 100%;}
+#myBtn:hover {background-color: #5947a7;}
 @media only screen and (max-width: 768px) {
-  h1 {
-    font-size: 2em;
-  }
+  menu {flex-direction: column;}
+  h1 {font-size: 2em;}
   .labels {width: 100%;text-align: left;}
   .input-tab {width: 100%; float: left;margin-left: -10px;}
   .input-field {width: 100%;}
   select {width: 100%;}
   .btn {width: 100%;margin: auto;}
+  section {min-height: 400px; padding: 3rem; padding-block: 5rem;}
+  #formulario {padding-block-end: 6rem;}
+  iframe {width: 300px; height: 200px;}
 }
 img {width: 100%;}
     </style>
 </head>
 <body>
     <header>
-      <menu class="menu-nav"><div id="logo" ><img src="logosombra.png" style="width: 100%;"></div> <a href="#nosotros">NOSOTROS</a> <a href="#cronograma">PROGRAMA</a> <a href="#formulario"> INSCRIPCION</a></menu>
+      <menu class="menu-nav"><div id="logo" ><img src="logosombra.png" style="width: 100%;"></div><a href="#cronograma">PROGRAMA</a> <a href="#formulario"> INSCRIPCION</a><a href="#mapa">COMO ASISTO?</a></menu>
     </header>
     <main><div id="hero" class=""><img src="hero2.png" style="width: 100%;"/> </div>
     <section id="disertantes" class=""><h2>NUESTROS DISERTANTES</h2> 
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem pariatur voluptatum autem, odit ad magnam ipsa molestias delectus aspernatur quod! Ad doloremque dolore, magnam facilis eveniet quisquam tenetur veritatis itaque!</p>
      <div><img src="dis1.gif"></div></section>
-    <section id="cronograma" class=""><h2>CRONOGRAMA DE CHARLAS</h2>
+    <section id="cronograma" class=""><h2 class="blanco mas-margen">CRONOGRAMA DE CHARLAS</h2>
     <div><img src="crono.png"> </div><p><a href="#">Ver cronograma completo...</a></p></section>
-    <section id="formulario" class=""><h2> INSCRIBITE</h2>
+    <section id="formulario" class=""><h2 class="mas-margen"> INSCRIBITE</h2>
       <p>Te enviaremos el link de la charla y te haremos llegar nuestro newsletter mensual (promesa)</p>
-      <form id="survey-form" method="GET">
+      <form id="survey-form" method="GET" class="forma">
 
         <div class="labels">
          <label id="name-label" for="name">* Nombre</label></div>
@@ -84,8 +104,6 @@ img {width: 100%;}
          <label id="number-label" for="number">* Edad</label></div>
        <div class="input-tab">
          <input class="input-field" type="number" id="number" name="number" min="1" max="120" placeholder="21" autocomplete="age" required></div>
-
-         
         <div class="labels">
          <label for="dropdown">A que te dedicas?</label></div>
        <div class="input-tab">
@@ -97,30 +115,50 @@ img {width: 100%;}
            <option value="otro">Otro</option>
          </select>
          </div>
-       
        <div class="labels">
          <label>Como conociste las jornadas?</label></div>
        <div class="input-tab">
-      
            <input type="radio" name="radio-button" value="amigo">Un amigo!<br>
            <input type="radio" name="radio-button" value="docente">Un docente<br>
            <input type="radio" name="radio-button" value="rrss">Por Redes soiales<br>
            <input type="radio" name="radio-button" value="otro">De casualidad<br>
        </div>
-       
        <div class="labels">
          <label for="comments">Te invitamos a dejarnos un mensaje</label></div>
        <div class="input-tab">
          <textarea class="input-field" id="comments" name="comments" rows="10" cols="40" placeholder="Escribe lo que quieras..."></textarea></div>
-         <label for="terms">
-          <input type="checkbox" id="terms" name="terms" required>
-        </label><br />          ACEPTO las <a>Condiciones</a> y formar parte del Newsletter 
-       <div class="btn">
+      <div class="labels"><input type="checkbox" id="terms" name="terms" required></div>
+      <div class="input-tab"> <label for="terms">
+        </label><p class="mas-margen">Acepto las <a href="#">Condiciones</a> y formar parte del Newsletter </p> 
+      </div><div class="btn">
          <button id="submit" type="submit">Enviar</button>
        </div>
-       
      </form>
     </section>
-  </main><footer>Copyleft (CC) BY NC - Licenciatura en Diseño Visual UNRN 2024</footer> 
-</body>
+    <section id="mapa" class=""><h2>COMO LLEGAR A LA UNRN</h2> Insertar mapa de google aqui <div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49585.010587077755!2d-67.65256805136721!3d-39.036679299999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a1d340fba99f9%3A0x6f2ad5650d4caffe!2sUniversidad%20Nacional%20de%20Rio%20Negro!5e0!3m2!1sen!2sus!4v1713937701178!5m2!1sen!2sus" width="600" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div><div class="button">Tambien se trasnmiten por MEET!</div></section>
+  </main><footer><div class="footercol"> <h3>Contactanos</h3><p><ul><li><a href="https://www.instagram.com/jornadasjedc">Instagram</a></li><li><a href="https://www.twitter.com/jornadas_jedc">Twitter</a></li><li><a href="https://www.youtube.com/jornadas_jedc">YouTube</a></li><li><a href="https://www.facebook.com/jornadasjedcunrn">Facebook</a></li></ul></p></div>
+    <div class="footercol"> <h3>Links utiles</h3><p><ul><li>UNRN</li><li>LDV 4</li><li>YouTube</li><li>Facebook</li></ul></p></div>
+    <div class="footercol"></div> <p>Copyleft (CC) BY NC - Licenciatura en Diseño Visual UNRN 2024</p></footer> 
+    <button onclick="topFunction()" id="myBtn" title="Hacia arriba">☝︎</button>
+    <script>
+      // Get the button
+      let mybutton = document.getElementById("myBtn");
+      
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      </script>
+  </body>
 </html>
